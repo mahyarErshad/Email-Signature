@@ -10,10 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Email Signature</title>
     <style>
-        :root{
-            --primary: #009cb4;
-            --secondary: #008699;
-        }
+      :root {
+        --primary: #009cb4;
+        --secondary: #008699;
+      }
       html,
       body {
         margin: 0;
@@ -33,26 +33,32 @@
         border: 2px solid black;
         position: relative;
       }
-      .card__top{
+      .card__top {
         height: 65%;
         background-color: #fff;
       }
-      .card__bottom{
+      .card__bottom {
         height: 35%;
-        background-image: linear-gradient(to right, var(--primary) , var(--secondary));;
+        background-image: linear-gradient(to right, var(--primary), var(--secondary));
+      }
+      .logo-image {
+        position: absolute;
+        width: 20%;
+        min-height: 50%;
+        top: 23%;
+        left: 3%;
+        min-width: 100px;
+        background-color: #fff;
+        border: 1px solid black;
       }
     </style>
   </head>
   <body>
     <div class="wrapper">
       <div class="card">
-        <img src="./assets/logo.png" alt="logo" />
-        <div class="card__top">
-
-        </div>
-        <div class="card__bottom">
-
-        </div>
+        <img class="logo-image" src="./assets/logo.png" alt="logo" />
+        <div class="card__top"></div>
+        <div class="card__bottom"></div>
       </div>
     </div>
   </body>
