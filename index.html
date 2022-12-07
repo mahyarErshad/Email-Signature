@@ -38,8 +38,10 @@
         align-items: center;
       }
       .right-section {
-        width: 60%;
+        width: 59%;
         padding-top: 5%;
+        display: flex;
+        justify-content: flex-end;
       }
       .logo-image {
         width: 50%;
@@ -48,8 +50,9 @@
         border: 5px solid var(--secondary);
         outline: 5px solid white;
       }
-      .right-section__wrapper{
-        border-top: 5px solid var(--secondary);
+      .right-section__wrapper {
+        width: 90%;
+        border-top: solid var(--secondary) 5px;
       }
     </style>
   </head>
@@ -59,9 +62,7 @@
         <img class="logo-image" src="./assets/logo.png" alt="Logo" />
       </div>
       <div class="right-section">
-        <div class="right-section__wrapper">
-
-        </div>
+        <div class="right-section__wrapper"></div>
       </div>
     </div>
   </body>
